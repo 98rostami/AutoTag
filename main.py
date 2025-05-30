@@ -7,11 +7,11 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BOT_TOKEN = os.environ.get("8138430585:AAFunWEvLFwtbiH0Fv7hoCI1UrLyPB4F2OU")
-API_ID = os.environ.get("598838")
-API_HASH = os.environ.get("d8ac841e8c0241079f32a2e8d52cb3d5")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_ID = os.environ.get("API_ID")
+API_HASH = os.environ.get("API_HASH")
 CAPTION = os.environ.get("DYNAMIC_CAPTION")
-CUSTOM_TAG = os.environ.get("@abar_bots")
+CUSTOM_TAG = os.environ.get("CUSTOM_TAG")
 if 'CUSTOM_TAG' in os.environ:
     custom_tag = " [" + os.environ.get("CUSTOM_TAG") + "]"
 else:
