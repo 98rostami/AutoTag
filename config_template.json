@@ -1,0 +1,34 @@
+{
+  "user_id": null,
+  "ffmpeg_commands": [
+    "ffmpeg -i \"{input_file}\" -y -vn -ar 44100 -ac 2 -b:a 192k \"{output_file_192k}\"",
+    "ffmpeg -i \"{input_file}\" -y -vn -ar 44100 -ac 2 -b:a 320k \"{output_file_320k}\""
+  ],
+  "tags": {
+    "title": "Default Title: {original_title}",
+    "artist": "Default Artist: {original_artist}",
+    "album": "Default Album",
+    "genre": "Default Genre",
+    "comment": "Processed by MyBot"
+  },
+  "cover_art": "default_cover.jpg",
+  "audio_signature": null,
+  "watermark": {
+    "type": "text", "text_content": "MyBot Watermark",
+    "font_path": null,
+    "font_size": 24,
+    "font_color": "white",
+    "position": "bottom_right"
+  },
+  "demo_settings": {
+    "duration": 30,
+    "max_size_kb": 100,
+    "bitrate": "64k"
+  },
+  "captions": {
+    "cover": "New Cover Art!",
+    "audio": "🎵 {title} - {artist}\nBitrate: {bitrate}",
+    "demo": "🎧 Demo: {title} - {artist}"
+  },
+  "output_filename_template": "{original_filename}_processed"
+}
